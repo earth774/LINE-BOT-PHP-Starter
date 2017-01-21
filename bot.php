@@ -15,26 +15,26 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-
+			
+			$link = "http://api.openweathermap.org/data/2.5/forecast/weather?q=".
+				$text
+				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $link
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
-			$link = "http://api.openweathermap.org/data/2.5/forecast/weather?q=".
-				$messages
-				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
+			
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$link],
+				'messages' => [$messages],
 			];
 			$post = json_encode($data);
 			echo $messages;
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
