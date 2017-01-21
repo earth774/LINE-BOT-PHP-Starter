@@ -44,4 +44,5 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
+var_dump($events);
 echo "OK";
