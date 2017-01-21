@@ -24,9 +24,12 @@ if (!is_null($events['events'])) {
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
+			$link = "http://api.openweathermap.org/data/2.5/forecast/weather?q=".
+				$messages
+				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$link],
 			];
 			$post = json_encode($data);
 			echo $messages;
