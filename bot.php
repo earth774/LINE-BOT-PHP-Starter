@@ -2,10 +2,9 @@
 $access_token = 'tE5TtVey741f7fDa2y1u9+NYbfhdbqRItsIE2vnbPW2uWusExRsQwnuuRX1+CVvtPCP+vwnPPgZ3wKrmIYKGHRn4QcqAlySw1879KZOHLfoVvid/E5BNsT+f0ptGwzMGvBcA3CHjyv3hoxK0TXyQAAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
-$content = $_POST['message'];
-//file_get_contents('php://input');
+$content = file_get_contents('php://input');
 // Parse JSON
-/*$events = json_decode($content, true);
+$events = json_decode($content, true);
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -45,6 +44,6 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-*/
+
 var_dump($content);
 echo "OK";
