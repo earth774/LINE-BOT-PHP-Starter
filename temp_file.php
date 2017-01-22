@@ -23,8 +23,8 @@
 
 
 			$str = "เมือง ".$obj['city']['name'].
-			" อุณหภูมิสูงสุด (temperature_max) : ".round(($data['max']-273.15),2). //show temp max
-			"℃ อุณหภูมิต่ำสุด (temperature_min) : ".round(($data['min']-273.15),2). // show temp min
+			" อุณหภูมิสูงสุด (temperature_max) : ".round(($data['max']-273.15),2)."(happy)". //show temp max
+			"℃ อุณหภูมิต่ำสุด (temperature_min) : ".round(($data['min']-273.15),2)."(happy)". // show temp min
 			"℃ อุณหภูมิเฉลี่ย (temperature_avg) : ".round(($data['mid']-273.15),2)."℃";
 			return $str;  // return data sent to bot.php
 	}		
