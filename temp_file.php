@@ -22,7 +22,7 @@
 				$data['mid']=$data['mid']/count($obj['list']);
 
 
-			$str = "เมือง ".$obj['city']['name'].0x1000A9.
+			$str = "เมือง ".$obj['city']['name'].
 			" อุณหภูมิสูงสุด (temperature_max) : ".round(($data['max']-273.15),2). //show temp max
 			"℃ อุณหภูมิต่ำสุด (temperature_min) : ".round(($data['min']-273.15),2). // show temp min
 			"℃ อุณหภูมิเฉลี่ย (temperature_avg) : ".round(($data['mid']-273.15),2)."℃";
