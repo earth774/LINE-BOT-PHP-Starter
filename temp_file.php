@@ -9,6 +9,12 @@
 			// echo $obj['city']['name']." , ";
 			// echo $obj['city']['country'];
 			// echo count($obj['list']);
+			$data = array(
+					"max"=>0,
+					"min"=>0,
+					"mid"=>0
+				);
+			
 			for ($i=0; $i <count($obj['list']) ; $i++) {  // calculate avg temp
 
 				if($data['max']<$obj['list'][$i]['main']['temp_max']){ // find max
