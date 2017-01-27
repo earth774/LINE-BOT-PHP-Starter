@@ -20,7 +20,7 @@
 				if($data['max']<$obj['list'][$i]['main']['temp_max']){ // find max
 					$data['max']=$obj['list'][$i]['main']['temp_max'];
 				}
-				if($data['min']>$obj['list'][$i]['main']['temp_min']){ // find min
+				if($data['min']<$obj['list'][$i]['main']['temp_min']){ // find min
 					$data['min']=$obj['list'][$i]['main']['temp_min'];
 				}
 				$data['mid']+=$obj['list'][$i]['main']['temp_max'];
