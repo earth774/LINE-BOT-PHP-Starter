@@ -24,8 +24,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				"type": "image",
-    				"originalContentUrl": "http://pre03.deviantart.net/d7c9/th/pre/i/2015/305/3/d/help_me_decide_plz_by_iyd-d9f64ei.png",
-    				"previewImageUrl": "http://pre03.deviantart.net/d7c9/th/pre/i/2015/305/3/d/help_me_decide_plz_by_iyd-d9f64ei.png"
+    				"originalContentUrl": "https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg",
+    				"previewImageUrl": "https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
