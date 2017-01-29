@@ -23,9 +23,9 @@ if (!is_null($events['events'])) {
 				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			// Build message to reply back
 			$messages = [
-				"type": "image",
-    				"originalContentUrl": "https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg",
-    				"previewImageUrl": "https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg"
+				'type': 'image',
+    				'originalContentUrl': 'https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg',
+    				'previewImageUrl': 'https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
