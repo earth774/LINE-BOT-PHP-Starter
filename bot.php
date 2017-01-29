@@ -23,8 +23,9 @@ if (!is_null($events['events'])) {
 				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => avg($link)
+				"type": "image",
+    				"originalContentUrl": "https://scontent.fbkk8-1.fna.fbcdn.net/v/t1.0-9/15134702_1437711642922874_1533227470675954652_n.jpg?oh=48afa9545cfb574670352ba85079751b&oe=58FF4045",
+    				"previewImageUrl": "https://scontent.fbkk8-1.fna.fbcdn.net/v/t1.0-9/15134702_1437711642922874_1533227470675954652_n.jpg?oh=48afa9545cfb574670352ba85079751b&oe=58FF4045"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
