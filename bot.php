@@ -23,9 +23,24 @@ if (!is_null($events['events'])) {
 				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			// Build message to reply back
 			$messages = [
-				'type' => 'image',
-        			'originalContentUrl' => 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg',
-        			'previewImageUrl' => 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg',
+				"type": "template",
+  				"altText": "this is a confirm template",
+  				"template": {
+    					"type": "confirm",
+      					"text": "Are you sure?",
+      					"actions": [
+          				{
+            					"type": "message",
+            					"label": "Yes",
+				    		"text": "yes"
+					},
+				  	{
+					    	"type": "message",
+					    	"label": "No",
+					    	"text": "no"
+          				}
+      					]
+  				}
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
