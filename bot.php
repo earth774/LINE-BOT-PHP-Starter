@@ -24,8 +24,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				"type": "image",
-    				"originalContentUrl": "https://scontent.fbkk8-1.fna.fbcdn.net/v/t1.0-9/15134702_1437711642922874_1533227470675954652_n.jpg?oh=48afa9545cfb574670352ba85079751b&oe=58FF4045",
-    				"previewImageUrl": "https://scontent.fbkk8-1.fna.fbcdn.net/v/t1.0-9/15134702_1437711642922874_1533227470675954652_n.jpg?oh=48afa9545cfb574670352ba85079751b&oe=58FF4045"
+    				"originalContentUrl": "http://pre03.deviantart.net/d7c9/th/pre/i/2015/305/3/d/help_me_decide_plz_by_iyd-d9f64ei.png",
+    				"previewImageUrl": "http://pre03.deviantart.net/d7c9/th/pre/i/2015/305/3/d/help_me_decide_plz_by_iyd-d9f64ei.png"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
