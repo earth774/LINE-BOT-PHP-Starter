@@ -24,8 +24,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type': 'image',
-    				'originalContentUrl': 'https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg',
-    				'previewImageUrl': 'https://pbs.twimg.com/profile_images/54789364/JPG-logo-highres.jpg'
+    				'originalContentUrl': 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg',
+    				'previewImageUrl': 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
