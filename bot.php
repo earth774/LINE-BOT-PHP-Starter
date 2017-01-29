@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				"type": "template",
-  				"altText": "this is a confirm template",
+  				"altText": "this is an template",
   				"template": {
     					"type": "confirm",
       					"text": "Are you sure?",
