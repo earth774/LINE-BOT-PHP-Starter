@@ -34,18 +34,14 @@ if (!is_null($events['events'])) {
 			    "previewImageUrl"=>"https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg"
 			];
 			
-			$stk = [
-				"type"=>"sticker",
-				"packageId"=>"1",
-				"stickerId"=>1
-			];
+			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$mg,$messages,$stk],
+				'messages' => [$mg,$messages],
 			];
 			
 			$post = json_encode($data);
