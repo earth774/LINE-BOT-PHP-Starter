@@ -23,13 +23,10 @@ if (!is_null($events['events'])) {
 				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			// Build message to reply back
 			$s = avg($link);
-			$str = "เมือง ".$obj['city']['name']."􀂲".
-			" อุณหภูมิสูงสุด (temperature_max) : ".round(($s['max']-273.15),2). //show temp max
-			"℃ อุณหภูมิต่ำสุด (temperature_min) : ".round(($s['min']-273.15),2). // show temp min
-			"℃ อุณหภูมิเฉลี่ย (temperature_avg) : ".round(($s['mid']-273.15),2)."℃";
+			
 			$messages = [
 				'type' => 'text',
-				'text' => $str
+				'text' => $s
 			];
 			
 			
