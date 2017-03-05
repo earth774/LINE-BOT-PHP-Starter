@@ -27,25 +27,27 @@ if (!is_null($events['events'])) {
 				'text' => avg($link)
 			];
 			
-			$post_data = [
-			    'replyToken' => $replyToken,
-			    'messages' => [
-			      [
-				'type' => 'image',
-				'originalContentUrl' => 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg',
-				'previewImageUrl' => 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg',
-			      ],
-			    ]
-			  ];
 			
+			$img = [
+			    "type"=> "image",
+			    "originalContentUrl"=>"https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg",
+			    "previewImageUrl"=>"https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg"
+			];
+			
+			$stk = [
+				"type"=>"sticker",
+				"packageId"=>"1",
+				"stickerId"=>$id
+			];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$post_data,$messages],
+				'messages' => [$mg,$messages,$stk],
 			];
+			
 			$post = json_encode($data);
 			echo $messages;
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
