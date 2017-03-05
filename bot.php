@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 			
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$mg,$messages],
+				'messages' => [$img,$messages],
 			];
 			
 			$post = json_encode($data);
