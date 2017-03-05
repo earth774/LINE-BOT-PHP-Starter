@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			$stk = [
 				"type"=>"sticker",
 				"packageId"=>"1",
-				"stickerId"=>$id
+				"stickerId"=>1
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
