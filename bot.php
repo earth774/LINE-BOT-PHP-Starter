@@ -22,11 +22,11 @@ if (!is_null($events['events'])) {
 				$text
 				.",th&APPID=a66d4a763bdf2b109ee7c0b91796a3c9";
 			// Build message to reply back
-			$s = avg($link);
+			
 			
 			$messages = [
 				'type' => 'text',
-				'text' => $s
+				'text' => avg($link)
 			];
 			
 			
