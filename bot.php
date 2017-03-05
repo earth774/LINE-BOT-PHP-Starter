@@ -26,6 +26,18 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => avg($link)
 			];
+			
+			$post_data = [
+			    'replyToken' => $replyToken,
+			    'messages' => [
+			      [
+				'type' => 'image',
+				'originalContentUrl' => 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg',
+				'previewImageUrl' => 'https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg',
+			      ],
+			    ]
+			  ];
+			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
